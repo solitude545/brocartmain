@@ -7,11 +7,11 @@
                 </div>
                 <div class="col-2">
                     {% if messages %}
-                    <div>
+                    <div class="message-container">
                           {% for message in messages %}
-                            <l>
+                            <li class="{{ message.tags }}">
                                 {{ message }}
-                            </l>
+                            </li>
                           {% endfor %}
                     </div>
                     {% endif %}
